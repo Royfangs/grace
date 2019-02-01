@@ -1,0 +1,37 @@
+.extra__bacgkground {
+
+  &::after {
+    content: '';
+    position: absolute;
+    background-color: $main-color;
+    height: 100%;
+    width: 200%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.margin-bottom-small {
+  margin-bottom: 1rem;
+}
+
+.margin-bottom-mid {
+  margin-bottom: 3rem;
+}
+
+.grey-background {
+  background: $light-background;
+}
+
+.no-padding-bottom {
+  padding-bottom: 0;
+}
+
+.logo-whiten {
+  filter: brightness(3);
+}

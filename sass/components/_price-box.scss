@@ -1,0 +1,46 @@
+.price-box__card {
+  padding: 3rem 0;
+  box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.15);
+
+  &__title {
+    font-size: $default-font-size;
+  }
+
+  &__price {
+    color: $sub-color;
+    font-size: 6rem;
+  }
+
+  &__subtitle {
+
+  }
+
+  &__item {
+    position: relative;
+    font-size: $default-font-size;
+    margin-bottom: 1rem;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 60%;
+      height: 1px;
+      background: #D3D3D3;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+#price-box {
+  @media screen and (max-width: 720px) {
+    display: flex;
+    flex-direction: column;
+  }
+  .price-box__card {
+    @media screen and (max-width: 720px) {
+      width: 100%;
+    }
+  }
+}

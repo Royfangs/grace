@@ -1,0 +1,43 @@
+.service {
+  display: flex;
+
+  @media screen and (max-width: 720px) {
+    flex-direction: column;
+  }
+
+  &__item {
+    //align content to center 
+    height: 55rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: 2s ease-out;
+  }
+
+  &__title {
+    color: $pure-color;
+    text-align: center;
+    font-size: 3.2rem;
+
+    &:not(:first-child) {
+      margin-top: 1rem;
+    }
+  }
+}
+
+#service {
+  padding-bottom: 0; 
+
+  // .col-1-of-2 {
+  //   margin-right: 0;
+  // }
+
+  .service__item {
+    @media screen and (max-width: 720px) {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+}

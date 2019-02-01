@@ -1,0 +1,35 @@
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+//Media query manager
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media screen and (max-width: 576px) {
+      @content
+    };
+  }
+
+  @if $breakpoint == tablet {
+    @media screen and (max-width: 840px) {
+      @content
+    };
+  }
+
+  @if $breakpoint == desktop {
+    @media screen and (max-width: 992px) {
+      @content
+    };
+  }
+
+  @if $breakpoint == large-desktop {
+    @media screen and (max-width: 1200px) {
+      @content
+    };
+  }
+}

@@ -1,0 +1,44 @@
+.features {
+  text-align:center;
+
+  &__icon {
+    font-size: $icon-size;
+    color: $sub-color;
+  }
+
+  &__title {
+    border-top: 1px solid #D3D3D3; 
+    position: relative;
+    color: $sub-color;
+    font-size: 4rem;
+    font-weight: bold;
+    padding-top: 2rem; 
+    margin-top: 2rem;
+
+    span {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-40%);
+      font-size: 2.5rem;
+    }
+  }
+
+  &__text {
+    margin-top: 1rem;
+    font-size: $default-font-size;
+  }
+
+}
+
+#features {
+  .col-1-of-4 {
+    @include respond(tablet) {
+      width: calc((100% - #{$gutter-horizontal}) / 2);
+      margin-right: 0;
+      margin-bottom: 2rem;
+      &:nth-child(odd) {
+        margin-right: 1rem;
+      }
+    }
+  }
+}

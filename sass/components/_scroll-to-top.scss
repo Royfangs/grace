@@ -1,0 +1,16 @@
+.scroll-to-top {
+  display: none;
+  position: fixed;
+  color: $pure-color;
+  border-radius: 50%;
+  box-shadow: $normal-shadow;
+  right: 4rem;
+  bottom: 4rem;
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  font-size: 2rem;
+  background-color: $sub-color;
+  cursor: pointer;
+}

@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  //inherit from body
+  box-sizing: inherit;
+}
+
+html {
+  //Let font size equal to 10px
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  //hide overflow part
+  overflow-x: hidden; 
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  padding: 0;
+  margin: 0;
+}

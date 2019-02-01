@@ -1,0 +1,44 @@
+.sidedrawer {
+  font-size: 1.6rem;
+  text-align: center;
+  position: fixed;
+  width: 200px;
+  height: 100vh;
+  background-color: $main-color;
+  transform: translateX(-200px);
+  transition: transform .3s ease-out;
+  z-index: 300;
+
+  @media screen and (max-width: 460px) {
+    width: 170px;
+  }
+}
+
+.sidedrawer--open {
+  transform: translateX(0);
+}
+
+.sidedrawer--close {
+  transform: translateX(-200px);
+}
+
+.sidedrawer-box {
+  // &__item {
+  //   padding: 2rem;
+  // }
+
+  &__link {
+    &:link, &:visited {
+      display: inline-block;
+      padding: 2rem;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      color: $pure-color;
+    }
+
+    &:hover {
+      background-color: $sub-color;
+    }
+  }
+}
